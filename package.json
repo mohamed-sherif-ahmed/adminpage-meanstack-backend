@@ -1,0 +1,22 @@
+{
+  "name": "adminpage",
+  "version": "1.0.0",
+  "description": "admin page for companies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsherif652/adminpage-meanstack-backend.git"
+  },
+  "author": "Mohamed Sherif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsherif652/adminpage-meanstack-backend/issues"
+  },
+  "homepage": "https://github.com/mohamedsherif652/adminpage-meanstack-backend#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
