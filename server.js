@@ -10,6 +10,7 @@ const {user} = require('./models/user');
 
 //routes
 const login = require('./routes/login');
+const register = require('./routes/register');
 
 var app = express();
 var router = express.Router();
@@ -25,5 +26,6 @@ app.use((req, res, next) => {
 
 //apis
 app.use('/login', login);
+app.use('/register', register);
 
 app.listen(3000);
