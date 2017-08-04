@@ -17,4 +17,4 @@ const mongoose = require('mongoose');
    }
  });
 
- module.exports = {Todo};
+ module.exports = {User};
