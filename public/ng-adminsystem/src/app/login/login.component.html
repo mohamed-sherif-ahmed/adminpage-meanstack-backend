@@ -4,6 +4,11 @@
     <input  id='username' placeholder='Username' #userName>
     <input type='password' id='password' placeholder='Password' #Password>
   </form>
-  <button  class='forgot'>FORGOT PASSWORD ?</button> <button (click)="loginPressed(userName.value,Password.value)" class='login'>LOG IN</button>
+  <button  class='create'>Create Account </button> <button (click)="loginPressed(userName.value,Password.value)" class='login'>LOG IN</button>
+  <div [ngSwitch]="found">
+    <p *ngSwitchCase="true" >USERNAME OR PASSWORD IS CORRECT</p>
+    <p *ngSwitchCase="false" >USERNAME OR PASSWORD IS NOT CORRECT</p>
+    <p *ngSwitchDefault></p>
+  </div>
 </div>
 
