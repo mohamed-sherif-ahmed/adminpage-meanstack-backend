@@ -5,17 +5,18 @@ var {User} = require('./../models/user');
 
 var router = express.Router();
 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
   var newUser = new User({
-    username: "moh",
-    password: "123",
-    name: "mohaa",
-    address: "1dsddf"
+    username: req.body.username,
+    password: req.body.password,
+    name: req.body.name,
+    address: req.body.address
   });
 
   newUser.save().then((doc) => {
     res.send(doc);
   }, (e) => {
+    res.send()
     console.log(e);
   });
 });
