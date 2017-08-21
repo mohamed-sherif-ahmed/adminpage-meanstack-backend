@@ -11,6 +11,8 @@ const {user} = require('./models/user');
 //routes
 const login = require('./routes/login');
 const register = require('./routes/register');
+const benefits = require('./routes/benefits');
+const news = require('./routes/news');
 
 var app = express();
 var router = express.Router();
@@ -27,5 +29,7 @@ app.use((req, res, next) => {
 //apis
 app.use('/login', login);
 app.use('/register', register);
+app.use('/benefits', benefits);
+app.use('/news', news)
 
 app.listen(3000);
