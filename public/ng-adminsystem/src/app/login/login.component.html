@@ -1,0 +1,9 @@
+<div class='wrap'>
+  Login
+  <form>
+    <input  id='username' placeholder='Username' #userName>
+    <input type='password' id='password' placeholder='Password' #Password>
+  </form>
+  <button  class='forgot'>FORGOT PASSWORD ?</button> <button (click)="loginPressed(userName.value,Password.value)" class='login'>LOG IN</button>
+</div>
+
