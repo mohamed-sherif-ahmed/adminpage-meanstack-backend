@@ -1,11 +1,11 @@
-<router-outlet></router-outlet>
-<div class='wrap'>
+<router-outlet *ngIf="profileshowen"></router-outlet>
+<div *ngIf="showen" class='wrap'>
   Login
   <form>
     <input  id='username' placeholder='Username' #userName>
     <input type='password' id='password' placeholder='Password' #Password>
   </form>
-    <button routerLink="/cr" class='login'>CREATE NEW ACCOUNT</button> <button (click)="loginPressed(userName.value,Password.value)" class='login'>LOG IN</button>
+    <button routerLink="/cr" (click)="pressed()" class='login'>CREATE NEW ACCOUNT</button> <button routerLink="/profile" (click)="loginPressed(userName.value,Password.value)" class='login'>LOG IN</button>
   <div class ='annonce' [ngSwitch]="found">
     <p *ngSwitchCase="true" >USERNAME AND PASSWORD IS CORRECT</p>
     <p *ngSwitchCase="false" >USERNAME OR PASSWORD IS NOT CORRECT </p>

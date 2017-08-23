@@ -14,6 +14,8 @@ interface response{
 export class LoginComponent implements OnInit {
 
   public found : boolean ;
+  public  showen : boolean = true;
+  public  profileshowen : boolean = false;
    currentUser ={};
   loginPressed(username: string , password: string ) {
     this.currentUser = {
@@ -23,8 +25,12 @@ export class LoginComponent implements OnInit {
     this.http.post<response>('/login',this.currentUser).subscribe(      (data) =>{
       this.found=data.found;
       console.log(this.found);
-    });
 
+        if (this.found){
+      this.showen=false;
+      this.profileshowen=true;
+      }
+    });
 
 
   }
@@ -34,4 +40,12 @@ export class LoginComponent implements OnInit {
 
   }
 
+   pressed(){
+    this.showen=false;
+    this.profileshowen=true;
+  }
+
+
+
 }
+
