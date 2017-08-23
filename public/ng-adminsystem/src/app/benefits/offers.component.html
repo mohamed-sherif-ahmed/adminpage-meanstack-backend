@@ -1,0 +1,10 @@
+<div class='wrap'>
+  Benfits POSTING
+  <form>
+    <input  id='name' placeholder='Name' #name>
+    <input  id='address' placeholder='Address' #address>
+    <input  id='zone' placeholder='Zone' #zone>
+    <input  id='phone' placeholder='Phone' #phone>
+  </form>
+  <button (click)="postPressed(name.value,address.value,zone.value,phone.value)"     class='login' >POST</button>
+</div>
