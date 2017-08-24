@@ -32,4 +32,4 @@ app.use('/register', register);
 app.use('/benefits', benefits);
 app.use('/news', news)
 
-app.listen(3000);
+app.listen(process.env.PORT || '5000');
