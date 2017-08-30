@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+<div *ngIf="showen"class='wrap'>
+  Register
+  <form>
+    <input  id='username' placeholder='Username' #userName>
+    <input type='password' id='password' placeholder='Password' #Password>
+    <input  id='Name' placeholder=' your name as in the national id' #name>
+    <input  id='address' placeholder=' your address' #address>
+
+  </form>
+   <button routerLink="/profile" (click)="createPressed(userName.value,Password.value,name.value,address.value)" class='login'>CREATE</button>
+</div>
+

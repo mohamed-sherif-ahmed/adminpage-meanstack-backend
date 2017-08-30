@@ -1,17 +1,27 @@
 {
-  "name": "adminpage-meanstack-backend",
-  "version": "0.0.0",
-  "private": true,
+  "name": "adminpage",
+  "version": "2.0.0",
+  "description": "admin page for companies",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsherif652/adminpage-meanstack-backend.git"
+  },
+  "author": "Mohamed Sherif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsherif652/adminpage-meanstack-backend/issues"
+  },
+  "homepage": "https://github.com/mohamedsherif652/adminpage-meanstack-backend#readme",
   "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.5"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.2.6"
   }
 }
